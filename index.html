@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title></title>
+  <style>
+  /* basic settings */
+    * {
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+    }
+    /* body */
+    body {
+      overflow: hidden;
+      height:100%;
+    }
+    /* header */
+    header {
+      display:flex;
+      user-select: none;
+      background-color:black;
+      color:white;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      box-shadow:0 0 10px black;
+    }
+    /* icon & text(header) */
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:5px;
+      font-size:15px;
+    }
+    /* book icon(header) */
+    .fa-solid fa-book {
+      width:100%;
+      max-width:80px;
+      color:white;
+    }
+    /* menu */
+    .menu {
+      align-items:center;
+      gap:10px;
+    }
+    /* content */
+    .content {
+      display:flex;
+      align-items:center;
+      padding:40px 16px;
+    }
+    /*picture*/
+    #picture1 {
+      width:100%;
+      max-width:1200px;
+    }
+    .img {
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      min-height:100vh;
+    }
+    p {
+      font-size:10px;
+    }
+    .text {
+      display:flex;
+      align-items:center;
+      flex-direction:column;
+      user-select:none;
+    }
+    button {
+      background:linear-gradient(135deg,#4CAF50,#2ecc71);
+      color:white;
+      border:none;
+      padding:7px 14px;
+      font-size:15px;
+      border-radius:30px;
+      transition:all 0.3s ease;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+    button:hover {
+      transform:translateY(-6px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+    button:active {
+      transform:scale(1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--brand-->
+    <div class="brand">
+      <i class="fa-solid fa-book"></i>
+      <b>PythonBook</b>
+    </div>
+    <!--more,about,contact-->
+    <div class="menu">
+      <a href="#">more</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
+    </div>
+  </header>
+  <main>
+    <section class="content">
+      <div class="img">
+        <img src="book.png" id="picture1">
+      </div>
+      
+      <div class="text">
+        <p>Python Programming + Python Machine Learning -The Comprehensive Guide to Learn and Apply Python Programming Language Using Best Practices and Advanced Features.</p><br>
+        <button>Buy Now!</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
